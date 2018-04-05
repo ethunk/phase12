@@ -1,0 +1,8 @@
+<div ID="team-menu">
+  <table ID="team-names">
+    <tr><th><h1>Team League Names<h1></th></tr>
+  <% @teams.each do |team| %>
+    <tr> <th> <a href="teams/<%=team.name%>"> <%= team.name %> </a> </th> </tr>
+  <% end %>
+</table>
+</div>
