@@ -13,13 +13,13 @@ describe Node do
     end
   end
 
-  describe "#next_node" do
+  describe "#next" do
     it "returns the node following the current node" do
-      expect(@node1.next_node).to eq(@node2)
+      expect(@node1.next).to eq(@node2)
     end
 
     it "returns nil if there is no following node" do
-      expect(@node2.next_node).to be_nil
+      expect(@node2.next).to be_nil
     end
   end
 
