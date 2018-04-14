@@ -89,5 +89,3 @@ data = ['value1', 'value2','value3','value4']
 data.each do |value|
   list.prepend(value)
 end
-
-binding.pry
