@@ -1,0 +1,3 @@
+[submodule "stacks/stacks/stack_assignment"]
+	path = stacks/stacks/stack_assignment
+	url = https://github.com/LaunchAcademy/stack_assignment.git
