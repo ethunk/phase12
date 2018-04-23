@@ -1,0 +1,35 @@
+<h1>Add New Car</h1>
+
+<%= form_for [@manufacturer, @car] do |f| %>
+  <%= f.label :manufacturer, "Manufacturer" %>
+  <%= f.select(:manufacturer_id, options_from_collection_for_select(@manufacturers, 'id', 'name')) %>
+  <br />
+
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <br />
+  </div>
+
+  <div>
+    <%= f.label :color %>
+    <%= f.text_field :color %>
+    <br />
+  </div>
+
+
+  <%= f.label :year %>
+  <%= f.text_field :year %>
+  <br />
+
+  <%= f.label :mileage %>
+  <%= f.text_field :mileage %>
+  <br />
+
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+  <br />
+
+  <%= f.submit "Create Car" %>
+<% end %>
+<br>

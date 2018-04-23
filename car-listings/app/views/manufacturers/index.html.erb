@@ -1,0 +1,16 @@
+<br>
+<%= link_to "Add Manufacturer", new_manufacturer_path %>
+<%= link_to "Add Car", new_car_path %>
+<br>
+
+<h1>
+  List of Manufacturers
+</h1>
+
+<table>
+  <% @manufacturers.each do |manufacturer| %>
+    <li>
+      <%= manufacturer.name %> <%= "(#{manufacturer.country})" %>
+    </li>
+  <% end %>
+</table>

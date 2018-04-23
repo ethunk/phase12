@@ -1,0 +1,20 @@
+<h1>
+  List of Cars
+</h1>
+
+<table>
+<% @cars.each do |car| %>
+  <li>
+    <%= car.name %>
+    <%= car.color %>
+    <%= car.year %>
+    <%= car.manufacturer.name %>
+    (<%= car.mileage %> miles)
+    <%= car.description %>
+  </li>
+<% end %>
+</table>
+
+<br>
+<%= link_to "Add Manufacturer", new_manufacturer_path %>
+<%= link_to "Add Car", new_car_path %>

@@ -17,7 +17,7 @@ feature 'user adds manufacturer', %{
     fill_in 'Country', with: 'Japan'
     click_button 'Create Manufacturer'
 
-    expect(page).to have_content('Manufacturer successfully added')
+    expect(page).to have_content('Manufacturer added successfully')
     expect(page).to have_content('Toyota')
   end
 

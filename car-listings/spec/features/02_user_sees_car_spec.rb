@@ -8,9 +8,10 @@ feature 'user sees car', %{
 
   # [] Visiting the cars_path should show a list of cars
   # [] I can visit this link from any page of the application
-
-  let!(:car_1) { FactoryBot.create(:car) }
-  let!(:car_2) { FactoryBot.create(:car) }
+  let!(:manufacturer_1) { FactoryBot.create(:manufacturer, name: 'Toyota') }
+  let!(:manufacturer_2) { FactoryBot.create(:manufacturer, name: 'Ford') }
+  let!(:car_1) { FactoryBot.create(:car, manufacturer: manufacturer_1) }
+  let!(:car_2) { FactoryBot.create(:car, manufacturer: manufacturer_2) }
 
   scenario 'user visits index page directly' do
     visit cars_path

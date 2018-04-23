@@ -9,12 +9,11 @@ feature 'user sees manufacturer', %{
   # [] Visiting the manufacturers_path should show a list of manufacturers
   # [] I can visit this link from any page of the application
 
-  let!(:manufacturer_1) { FactoryBot.create(:manufacturer) }
-  let!(:manufacturer_2) { FactoryBot.create(:manufacturer) }
+  let!(:manufacturer_1) { FactoryBot.create(:manufacturer, name: 'Toyota') }
+  let!(:manufacturer_2) { FactoryBot.create(:manufacturer, name: 'Ford') }
 
   scenario 'user visits index page directly' do
     visit manufacturers_path
-
     expect(page).to have_content(manufacturer_1.name)
     expect(page).to have_content(manufacturer_1.country)
 
