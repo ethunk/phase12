@@ -1,25 +1,11 @@
-['big-o-notation',
-'duplicate-element-counter',
-'search-algorithms',
-'minimum-coins',
-'optimal-guesser',
-'linked-list',
-'linked-list-challenge',
-'bracket-matcher',
-'stacks',
-'caesar-cipher',
-'queues',
-'minimum-consecutive-integers',
-'sorting-algorithms',
-'greatest-common-factor',
-'word-counter',
-'recursion',
-'fibonacci',
-'factorial',
-'continue-your-online-learning',
-'reading-list',
-'what-a-web-developer-should-know'].each do |slug|
-  system "et get ${slug}"
+require 'pry'
+['big-o-notation','duplicate-element-counter','search-algorithms','minimum-coins',
+'optimal-guesser','linked-list','linked-list-challenge','bracket-matcher',
+'stacks','caesar-cipher','queues','minimum-consecutive-integers',
+'sorting-algorithms','greatest-common-factor','word-counter',
+'recursion','fibonacci','factorial','continue-your-online-learning',
+'reading-list','what-a-web-developer-should-know'].each do |slug|
+  system "et get #{slug}"
 end
 
 
